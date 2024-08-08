@@ -4,8 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-// TODO: Uncomment baris kode dibawah ini untuk meng-import Halaman Hello ke dalam router
-// import Hello from "./routes/hello";
+// Mengimpor Halaman Hello ke dalam router
+import Hello from "./routes/hello";
 import Home from "./routes/home";
 
 const router = createBrowserRouter([
@@ -13,12 +13,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-
-  // TODO: Uncomment baris kode dibawah ini untuk menambahkan routing baru ke Halaman Hello
-  // {
-  //   path: "/hello",
-  //   element: <Hello />,
-  // },
+  // Menambahkan routing baru ke Halaman Hello
+  {
+    path: "/hello",
+    element: <Hello />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
